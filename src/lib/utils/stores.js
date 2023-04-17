@@ -30,5 +30,7 @@ export const _battle = storage("nwp-battle", {
   points: 0,
   lost: 0,
   won: 0,
+  step: 0,
+  set: 0,
   name: "player",
 });

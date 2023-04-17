@@ -1,14 +1,15 @@
 <script>
   import { Layer } from "svelte-canvas";
   const bgs = [
-    "./img/s1/1/1.jpg",
-    "./img/s1/1/2.jpg",
-    "./img/s1/1/3.jpg",
-    "./img/s1/1/4.jpg",
-    "./img/s1/1/5.jpg",
-    "./img/s1/1/6.jpg",
-    "./img/s1/1/7.jpg",
-    "./img/s1/1/8.jpg",
+    "./img/s2/2/1.jpg",
+    "./img/s2/2/2.jpg",
+    "./img/s2/2/3.jpg",
+    "./img/s2/2/4.jpg",
+    "./img/s2/2/5.jpg",
+    "./img/s2/2/6.jpg",
+    "./img/s2/2/7.jpg",
+    "./img/s2/2/8.jpg",
+    "./img/s2/2/9.jpg",
   ];
   export let step = 0;
 

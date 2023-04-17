@@ -2,9 +2,10 @@
   import HeroPre1 from "./HeroPre1.svelte";
   import Bg1 from "./Bg1.svelte";
   import { Canvas } from "svelte-canvas";
-  let step = 5;
+  export let step = 5;
   $: width = 0;
   $: height = 0;
+  
 </script>
 
 <figure>
