@@ -1,0 +1,104 @@
+<script>
+  import Hero from "./lib/components/Hero.svelte";
+
+  import TopBar from "./lib/components/TopBar.svelte";
+
+  import svelteLogo from "./assets/svelte.svg";
+  import viteLogo from "/vite.svg";
+  import Counter from "./lib/Counter.svelte";
+</script>
+
+<svelte:head>
+  <title>NWP-PAGE</title>
+  <link href="https://fonts.cdnfonts.com/css/press-start-2p" rel="stylesheet" />
+</svelte:head>
+
+<TopBar />
+
+<main class="main">
+  <section class="active page">
+    <Hero />
+    <section class="container aligner py-4">
+      <!--  -->
+
+      <div class="nes-container with-title is-rounded is-centered">
+        <p class="title">Mainbar</p>
+
+        <button type="button" class="nes-btn is-primary">Run Game</button>
+        <button type="button" class="nes-btn is-error">Upgrades</button>
+
+        <!-- <button type="button" class="nes-btn is-error">Error</button> -->
+        <button class="nes-btn" type="button">Settings</button>
+      </div>
+    </section>
+  </section>
+  <section class="page right">
+    <section
+      class="bg-light d-flex flex-column flex-grow-1 justify-content-center"
+    >
+      <div class="container pb-4 pt-4">
+        <div class="align-items-center row">
+          <div class=" col-lg-5 mt-n5">
+            <h2 class="h6 mb-1 text-primary">Upgrade</h2>
+            <h3 class="fw-bold h2 mb-1">
+              We Work Together To Play, Have Fun, Design And Create
+            </h3>
+          </div>
+          <div class="col-lg-7">
+            <p class="fw-light mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi
+              volutpat interdum sem, vitae aliquam odio tempor blandit.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary ms-2">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="page right">
+    <section
+      class="bg-light d-flex flex-column flex-grow-1 justify-content-center"
+    >
+      <div class="container pb-4 pt-4">
+        <div class="align-items-center row">
+          <div class=" col-lg-5 mt-n5">
+            <h2 class="h6 mb-1 text-primary">Settings</h2>
+            <h3 class="fw-bold h2 mb-1">
+              We Work Together To Play, Have Fun, Design And Create
+            </h3>
+          </div>
+          <div class="col-lg-7">
+            <p class="fw-light mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              volutpat sem ac elit rutrum rhoncus. Donec a lacinia metus. Morbi
+              volutpat interdum sem, vitae aliquam odio tempor blandit.
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary ms-2">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!--  -->
+</main>
+
+<style>
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.svelte:hover {
+    filter: drop-shadow(0 0 2em #ff3e00aa);
+  }
+  .read-the-docs {
+    color: #888;
+  }
+</style>

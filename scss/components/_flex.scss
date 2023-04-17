@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+
+.flex {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.flex.bar {
+   justify-content: space-between;
+}
+
+.flex-1 {
+   flex-grow: 1;
+}

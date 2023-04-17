@@ -1,0 +1,57 @@
+.nes-list a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--app-color);
+    text-decoration: none;
+
+    &:hover {
+        color: $color-12;
+    }
+}
+
+.no-style {
+    list-style-type: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.flex-list {
+    list-style-type: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+
+    a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--app-color);
+        text-decoration: none;
+
+        &:hover {
+            color: $color-12;
+        }
+    }
+}
+
+.nes-list.flex > *,
+.nes-list-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nes-list.flex {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lists {
+    margin-bottom: 1rem
+}

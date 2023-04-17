@@ -1,0 +1,66 @@
+.nes-dialog {
+    padding: 1.5rem 2rem;
+    border-width: $border-size;
+
+    > .backdrop,
+    &::backdrop {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    &.is-rounded {
+        @include rounded-corners();
+
+        &.is-dark {
+            @include rounded-corners(true);
+        }
+    }
+
+    &.is-dark {
+        color: $background-color;
+        background-color: $base-color;
+        border-color: $background-color;
+
+        &:not(.is-rounded)::before {
+            position: absolute;
+            top: -$border-size * 2;
+            right: -$border-size * 2;
+            bottom: -$border-size * 2;
+            left: -$border-size * 2;
+            z-index: -1;
+            content: "";
+            border: $border-size solid $base-color;
+        }
+    }
+
+    .dialog-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .dialog-menu.center {
+        justify-content: center
+    }
+
+    .dialog-menu.end {
+        justify-content: flex-end
+    }
+
+    .dialog-menu.between {
+        justify-content: space-between
+    }
+
+    .dialog-menu > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}

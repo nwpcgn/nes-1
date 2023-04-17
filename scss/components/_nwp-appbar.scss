@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.nes-appbar {
+    --space-y: 0.25rem;
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1020;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.nes-appbar {
+    -webkit-box-shadow: var(--bs-box-shadow-sm);
+    box-shadow: var(--bs-box-shadow-sm);
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-y) 0;
+}
+
+
+
+.nav-brand p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.nav-brand a {
+    text-decoration: none;
+}
+
+.nav-brand .label {
+    margin-left: 0;
+}
+
+.nav-btn {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+}
+
+/* .nav-btn:active {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
